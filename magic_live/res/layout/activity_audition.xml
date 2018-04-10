@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="288dp"
+        android:layout_height="512dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <com.magic.live.activity.widget.CameraView
+            android:id="@+id/audition_camera"
+            android:layout_width="288dp"
+            android:layout_height="512dp"/>
+
+        <LinearLayout
+            android:id="@+id/switch_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="9dp"
+            android:paddingLeft="9dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:background="@drawable/live_switch_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/close_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="9dp"
+            android:paddingRight="9dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:background="@drawable/live_close_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/start_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/live_preview_start_selctor"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:clickable="true"/>
+    </RelativeLayout>
+</RelativeLayout>
